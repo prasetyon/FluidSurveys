@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status_list">
+        <item>SWORD</item>
+        <item>SHIELD</item>
+        <item>CALON_SHIELD</item>
+        <item>PANITIA</item>
+        <item>KONSELOR</item>
+        <item>ALUMNI</item>
+        <item>UMUM</item>
+    </string-array>
+    <string-array name="sex_list">
+        <item>L</item>
+        <item>P</item>
+    </string-array>
+</resources>

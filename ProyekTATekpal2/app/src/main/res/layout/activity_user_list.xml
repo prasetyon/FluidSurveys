@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="activity.UserListActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User List"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/login_input"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/blueLineLight"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <Spinner
+        android:id="@+id/spinnerUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llUserDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/small_blackborder">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/username"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:hint="enter your username"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/full_name"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="text"
+                    android:hint="enter your full name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/department"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinnerDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/email"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="textEmailAddress"
+                    android:hint="enter your email" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/phone_number"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="number"
+                    android:hint="enter your phone number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="NIK"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edNIK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="text"
+                    android:hint="enter your NIK" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/register_input"
+                android:text="Signature"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+            <ImageView
+                android:id="@+id/ivSignature"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNamaBlok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Komponen 1"
+        android:textSize="@dimen/text_username"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hapus_btn"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSwp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/button_inside_text"
+        android:text="@string/swp1"/>
+
+    <Button
+        android:id="@+id/btnSspsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/button_inside_text"
+        android:text="@string/ssps"/>
+
+</LinearLayout>

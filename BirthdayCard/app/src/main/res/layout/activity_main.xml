@@ -1,0 +1,41 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/impossible">
+
+    <TextView
+        android:textColor="#FFF"
+        android:text="HBD Panji Rimawan!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="From"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="Prasetyo N"
+            android:textSize="26sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

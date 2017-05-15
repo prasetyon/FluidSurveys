@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.MainActivity">
+
+    <item android:id="@+id/action_new"
+        android:title="New Task"
+        android:icon="@drawable/plus"
+        android:orderInCategory="300"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        android:orderInCategory="300"
+        app:showAsAction="ifRoom" />
+</menu>

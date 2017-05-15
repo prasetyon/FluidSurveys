@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prasetyon.proyektatekpal2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="login.AdminSignUpActivity" />
+        <activity android:name="login.ForgotPasswordActivity" />
+        <activity android:name="login.UserSignUpActivity" />
+        <activity android:name="login.SignUpActivity" />
+        <activity android:name="activity.MainPageActivity" />
+        <activity android:name="activity.AddProjectActivity" />
+        <activity android:name="activity.ProjectMainMenuActivity" />
+        <activity android:name="subAssembly.SubAssemblyActivity" />
+        <activity android:name="assembly.AssemblyActivity" />
+        <activity android:name="activity.InspectionReportActivity" />
+        <activity android:name="subAssembly.SubAssemblyListActivity" />
+        <activity android:name="subAssembly.SubAssemblyProsesActivity" />
+        <activity android:name="assembly.AssemblyListActivity" />
+        <activity android:name="assembly.AssemblyDetailActivity" />
+        <activity android:name="subAssembly.SubAssemblyCheckActivity" />
+        <activity android:name="assembly.AssemblyEditActivity" />
+        <activity android:name="subAssembly.SubAssemblyAddActivity" />
+        <activity android:name="assembly.AssemblyAddActivity" />
+        <activity android:name="erection.ErectionListActivity" />
+        <activity android:name="erection.ErectionDetailActivity" />
+        <activity android:name="erection.ErectionEditActivity" />
+        <activity android:name="inspeksiFinal.InspeksiFinalListActivity" />
+        <activity android:name="inspeksiFinal.InspeksiFinalCheckActivity" />
+        <activity android:name="activity.DetailProjectActivity" />
+        <activity android:name="activity.UserListActivity" />
+        <activity android:name="inspeksiFinal.InspeksiFinalEditActivity" />
+        <activity android:name="dokumen.UploadFileActivity" />
+        <activity android:name="report.SubAssemblyReport" />
+        <activity android:name="report.AssemblyReport" />
+        <activity android:name="report.ErectionReport" />
+        <activity android:name="report.InspeksiFinalReport"></activity>
+    </application>
+
+</manifest>

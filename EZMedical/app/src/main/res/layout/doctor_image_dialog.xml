@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/small_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/thumbnail"
+        android:layout_weight="2.5"/>
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/about_text_size"
+        android:text="@string/location_test"
+        android:gravity="center_vertical"
+        android:layout_weight="5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/jumlah_antrian"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/about_text_size"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvAntrian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/number_test"
+            android:textColor="@color/red"
+            android:textSize="@dimen/antrian_text_size"/>
+
+        <Button
+            android:id="@+id/btnAntrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:text="@string/ambil_antrian"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="proses_list_2">
+        <item>Select a proses...</item>
+        <item>Raw Material</item>
+        <item>Block</item>
+    </string-array>
+</resources>

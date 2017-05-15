@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="login.UserSignUpActivity">
+
+    <ScrollView
+        android:id="@+id/svData"
+        android:layout_above="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_new"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/login_input"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/blueLineLight"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/username"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:hint="enter your username"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/password"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="textPassword"
+                    android:hint="enter your password"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/ver_password"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edVerPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="textPassword"
+                    android:hint="retype your password"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/full_name"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="text"
+                    android:hint="enter your full name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/department"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinnerDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/email"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="textEmailAddress"
+                    android:hint="enter your email" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Company Name"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="text"
+                    android:hint="enter your company name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/phone_number"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="number"
+                    android:hint="enter your phone number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/activation_code"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edActivationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="text"
+                    android:hint="enter activation code" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="NIK"
+                    android:textSize="@dimen/register_input"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dbl_dot"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edNIK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textSize="@dimen/register_input"
+                    android:inputType="text"
+                    android:hint="enter your NIK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnChoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_file"/>
+
+                <EditText
+                    android:id="@+id/edFile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/register_input"
+                    android:text="Signature"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="clear"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llSignature"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:background="@drawable/blackborder"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/back_btn"
+                android:layout_weight="2"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_btn"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_btn"
+                android:layout_weight="2"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

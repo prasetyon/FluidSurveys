@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/blackborder">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="@drawable/blackborder">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Dokter Cinta"/>
+
+        <TextView
+            android:id="@+id/tvLokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Jalan Mulyosari"/>
+
+        <TextView
+            android:id="@+id/tvOperasional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="09:00 - 21:00"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_raw_material"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="subAssembly.SubAssemblyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvProjectDokumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Assembly"
+            android:textSize="@dimen/register_input"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnAddData"
+                android:layout_width="@dimen/btn_project_menu"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/add_data" />
+
+            <Button
+                android:id="@+id/btnListData"
+                android:layout_width="@dimen/btn_project_menu"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/list_data" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/btn_bottom"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/back_btn"
+        android:textSize="@dimen/text_bottom"/>
+
+</RelativeLayout>

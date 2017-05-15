@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_list">
+        <item>Bottom</item>
+        <item>Boottop</item>
+        <item>Top Side</item>
+        <item>Seachest</item>
+        <item>Weather Deck</item>
+        <item>Structure Exterior</item>
+        <item>Structure Interior</item>
+        <item>Water Ballast Tank</item>
+        <item>Cargo Oil Tank</item>
+        <item>Cargo Hatch Coaming</item>
+        <item>Slop Tank</item>
+        <item>Fresh Water Tank</item>
+        <item>F.O, D.O Tanks</item>
+        <item>After Peak Tank</item>
+        <item>Fore Peak Tank</item>
+        <item> </item>
+    </string-array>
+</resources>

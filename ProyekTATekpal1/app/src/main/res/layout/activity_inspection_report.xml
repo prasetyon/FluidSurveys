@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inspection_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="activity.InspectionReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report"
+            android:textSize="@dimen/register_input"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/spinnerProses"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinnerID"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinnerSubProses"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnViewReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="View Report" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/btn_bottom"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/back_btn"
+        android:textSize="@dimen/text_bottom"/>
+
+</RelativeLayout>

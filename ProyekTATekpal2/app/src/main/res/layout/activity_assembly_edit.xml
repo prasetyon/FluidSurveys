@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_block_stage_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="assembly.AssemblyEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_username"
+                    android:background="@color/transparence_black"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/bagianassembly"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/edBagian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hullconstruction"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_username"
+                    android:background="@color/transparence_black"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="@string/posisi_blok"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/textView" />
+
+                <Spinner
+                    android:id="@+id/spinnerLokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_username"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@color/transparence_black"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="@string/nama_blok"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_username"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@color/transparence_black"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="Welded To"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerWelded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_username"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@color/transparence_black"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="Type of Weld"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_username"
+                    android:background="@color/transparence_black"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="Frame Number"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinnerFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_username"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/line"
+                    android:background="@color/transparence_black"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="@string/proses"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/blackborder">
+                    <TextView
+                        android:id="@+id/tvProses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Visual Welding Inspection"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="@dimen/btn_bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_bottom"
+                    android:textStyle="bold"
+                    android:text="@string/back_btn"/>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="@dimen/btn_bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_bottom"
+                    android:textStyle="bold"
+                    android:text="@string/submit_btn"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

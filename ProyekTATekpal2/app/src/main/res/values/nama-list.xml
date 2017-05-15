@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nama_array">
+        <item>Main Deck Plating</item>
+        <item>Deck Long. Grider</item>
+        <item>Deck Transverse Web</item>
+        <item>Deck Girder / Web</item>
+        <item>DK. Transv Beam (O.S TKS)</item>
+        <item>DK. Transv Beam (I.S TKS)</item>
+        <item>Side Shell</item>
+        <item>Longitudinal Bhd. Plating</item>
+        <item>Transverse Bhd. Plating</item>
+        <item>Side Shell Plating</item>
+        <item>Side Webs</item>
+        <item>Side Frames (O.S Tanks)</item>
+        <item>Side Frames (I.S Tanks)</item>
+        <item>Bottom Shell</item>
+        <item>Floor</item>
+        <item>Floor in Engine Room</item>
+        <item>Bottom Girder</item>
+        <item>Floor Girder</item>
+        <item>Engine Girder</item>
+        <item>DK. Transverse Web</item>
+        <item>Vert. Stiffeners (O.S Tanks)</item>
+        <item>Vert. Stiffeners (I.S Tanks)</item>
+        <item>Tank Top Plating</item>
+        <item>Tank Top Beams</item>
+        <item>Tank Top Girder</item>
+        <item>Transverse Bhd.</item>
+        <item>Longitudinal Bhd.</item>
+        <item>Fore Peak Platform Plating</item>
+        <item>Transverse Beam</item>
+        <item>Platform Girder</item>
+        <item>All Brackets Parts</item>
+    </string-array>
+</resources>

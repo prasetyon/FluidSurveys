@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_list">
+        <item>Bottom (Flat Part)</item>
+        <item>Bottom (Except Above)</item>
+        <item>Boot-top</item>
+        <item>Top Side</item>
+        <item>Seachest</item>
+        <item>Weather Deck</item>
+        <item>Structure Exterior</item>
+        <item>Structure Interior</item>
+        <item>Water Ballast Tank</item>
+        <item>Cargo Oil Tank</item>
+        <item>Cargo Hatch Coaming</item>
+        <item>Slop Tank</item>
+        <item>Fresh Water Tank</item>
+        <item>F.O, D.O, L.O Tanks</item>
+        <item>Waste Oil Tank</item>
+        <item>After Peak Tank</item>
+        <item>Fore Peak Tank</item>
+        <item>Engine Room</item>
+        <item>Pump Room</item>
+        <item>Cargo Hold</item>
+        <item>Rudder</item>
+        <item>Forecastle Shell</item>
+        <item>Bullwark</item>
+        <item>Superstructure (External Side)</item>
+        <item>Superstructure (Internal Side)</item>
+        <item>Outfitting and Equipment</item>
+        <item>Chain Locker</item>
+        <item>Void and Cofferdam</item>
+        <item>Piping</item>
+    </string-array>
+</resources>

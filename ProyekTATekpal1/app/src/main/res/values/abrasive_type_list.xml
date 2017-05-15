@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="abrasive_type_list">
+        <item>Steel Grit</item>
+        <item>Steel Shot</item>
+    </string-array>
+</resources>

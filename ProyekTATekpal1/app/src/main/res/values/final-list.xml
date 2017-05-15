@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="final_list">
+        <item>Select the part...</item>
+        <item>Visual Condition</item>
+        <item>Miss Coat</item>
+        <item>Pinholes</item>
+        <item>Bubbles</item>
+        <item>Voids</item>
+        <item>Holiday</item>
+        <item>Other Defect</item>
+        <item>Documentation 1</item>
+        <item>Documentation 2</item>
+        <item>Documentation 3</item>
+        <item>Documentation 4</item>
+        <item>Documentation 5</item>
+        <item>Documentation 6</item>
+    </string-array>
+    <string-array name="pulloff_list">
+        <item>Select the part...</item>
+        <item>Failure 1</item>
+        <item>Failure 2</item>
+        <item>Failure 3</item>
+        <item>Documentation 1</item>
+        <item>Documentation 2</item>
+        <item>Documentation 3</item>
+        <item>Documentation 4</item>
+        <item>Documentation 5</item>
+        <item>Documentation 6</item>
+    </string-array>
+</resources>

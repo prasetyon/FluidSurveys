@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@drawable/blackborder">
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <TextView
+        android:id="@+id/namaApotek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Apotek Setuju"/>
+
+    <TextView
+        android:id="@+id/lokasiApotek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Jalan Mulyosari"/>
+
+</LinearLayout>

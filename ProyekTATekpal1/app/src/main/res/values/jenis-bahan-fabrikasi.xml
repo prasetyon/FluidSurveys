@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fabrikasi_array">
+        <item>Pelat</item>
+        <item>Profil</item>
+        <item>Outfitting and Equipment</item>
+    </string-array>
+</resources>

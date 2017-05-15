@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_raw_material_check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="subAssembly.SubAssemblyCheckActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNamaBlok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blok 1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_username"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/blueLineLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_username"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/transparence_black"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/proses"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edProsesBlok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Primary Surface Preparation and Shop Primer"
+                android:textSize="@dimen/input_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_username"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/transparence_black"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/nama_blok"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edNamaBlok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="@dimen/input_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_username"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/transparence_black"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/id_komponen"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edIdKomponen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="@dimen/input_text"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visual_inspection"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/blackborder"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/steel_temp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edSteelTemperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/relative_humidity"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edRelativeHumidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dew_point"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edDewPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <EditText
+                        android:id="@+id/edStandardDewPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/input_text"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/button_inside_text"
+                        android:text="@string/surface_contaminant"
+                        android:textColor="@color/black"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edSurfaceContaminant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/surface_tretement_method"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cbMechanicalTool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mechanical_tool"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_small">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/blackborder"
+                            android:text="@string/st_2"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"/>
+
+                        <CheckBox
+                            android:id="@+id/cbSt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/blackborder"
+                            android:text="@string/st_3"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"/>
+
+                        <CheckBox
+                            android:id="@+id/cbSt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edStandardMechanicalTool"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blackborder"
+                    android:hint="@string/standard"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small">
+
+                <CheckBox
+                    android:id="@+id/cbBlasting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blasting"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blackborder"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/sa_1"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"/>
+
+                <CheckBox
+                    android:id="@+id/cbSa1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blackborder"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/sa_2"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"/>
+
+                <CheckBox
+                    android:id="@+id/cbSa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blackborder"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/sa_2_1_2"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"/>
+
+                <CheckBox
+                    android:id="@+id/cbSa212"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blackborder"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/sa_3"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"/>
+
+                <CheckBox
+                    android:id="@+id/cbSa3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/abrasive_material"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/blackborder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/type_of_abrasive"
+                        android:textColor="@color/black"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerTypeOfAbrasive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/abrasive_size"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/edInputAbrasiveSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:inputType="text"
+                        android:hint="-"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="3"
+                        android:background="@drawable/blackborder"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/edStandardAbrasiveSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:inputType="text"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="3"
+                        android:background="@drawable/blackborder"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/grade"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/edInputGrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:inputType="text"
+                        android:hint="-"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="3"
+                        android:background="@drawable/blackborder"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/edStandardGrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:inputType="text"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="3"
+                        android:background="@drawable/blackborder"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/blasting_condition"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/blackborder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/time_and_Date"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/edInputTimeDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:inputType="text"
+                        android:hint="-"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="3"
+                        android:background="@drawable/blackborder"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/edStandardTimeDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:inputType="text"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="3"
+                        android:background="@drawable/blackborder"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/roughness"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/edInputRoughness"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:inputType="text"
+                        android:hint="-"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="3"
+                        android:background="@drawable/blackborder"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/edStandardRoughness"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:inputType="text"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="3"
+                        android:background="@drawable/blackborder"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/rust_grade"
+                        android:textColor="@color/black"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerRustGrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/soluble_salt_measurement"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/blackborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/soluble_salt_formula"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/soluble_formula"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edInputC"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:background="@drawable/blackborder"
+                        android:layout_marginRight="@dimen/margin_small"/>
+
+                    <TextView
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:text="y2"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edInputY2"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:text="V"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edInputV"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:background="@drawable/blackborder"
+                        android:layout_marginRight="@dimen/margin_small"/>
+
+                    <TextView
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:text="y1"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edInputY1"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edInputVA"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="@dimen/button_inside_height"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/standard"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edStandardSSF"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/blackborder"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/result"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edResultSSF"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/blackborder"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/first_coat_app_method"
+                android:layout_marginBottom="@dimen/margin_small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/blackborder">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbAirlessSpray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/airless_spray"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbConventionalSprayer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/conventional_sprayer"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbRollBrush"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/roll_or_brush"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edStandard1stCAM"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="@string/standard"
+                    android:layout_weight="3"
+                    android:background="@drawable/blackborder"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/air_temperature"
+                android:layout_marginBottom="@dimen/margin_small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/blackborder"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dry_bulb"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edDryBulb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wet_bulb"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edWetBulb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paint_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edPaintName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <EditText
+                        android:id="@+id/edStandardPaintName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/input_text"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colour_shade_no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edColourShade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <EditText
+                        android:id="@+id/edStandardColourShade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/input_text"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/batch_no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edBatchNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <EditText
+                        android:id="@+id/edStandardBatchNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/input_text"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thinner_no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edThinnerNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <EditText
+                        android:id="@+id/edStandardThinnerNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/input_text"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/volume_solid"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edVolumeSolid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <EditText
+                        android:id="@+id/edStandardVolumeSolid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/input_text"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/application_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edApplicationDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Curing_time"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edCuringTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <EditText
+                        android:id="@+id/edStandardCuringTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/input_text"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pot_life"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_inside_text"
+                        android:layout_weight="7"/>
+
+                    <EditText
+                        android:id="@+id/edPotLife"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:textSize="@dimen/input_text"
+                        android:layout_weight="8"
+                        android:background="@drawable/blackborder"/>
+
+                    <EditText
+                        android:id="@+id/edStandardPotLife"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="8"
+                        android:hint="@string/standard"
+                        android:textSize="@dimen/input_text"
+                        android:background="@drawable/blackborder"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/inspection_documentation"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/blackborder">
+
+                <Button
+                    android:id="@+id/btnImportInspectionDocumentation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="12sp"
+                    android:text="@string/import_photo"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/comment"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edBlockComment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/blackborder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/blueLineLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_username"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/transparence_black"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/nama_dokumen"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edNamaDokumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="@dimen/btn_bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_bottom"
+                    android:textStyle="bold"
+                    android:text="@string/back_btn"/>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="@dimen/btn_bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_bottom"
+                    android:textStyle="bold"
+                    android:text="@string/submit_btn"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

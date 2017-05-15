@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:background="#0D47A1"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="ATM MANDIRI"
+            android:textSize="27sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text=">     Lihat Tabungan"
+            android:background="#0D47A1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Transfer      <"
+            android:background="#0D47A1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

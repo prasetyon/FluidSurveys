@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">Warta Jemaat</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="warta" translatable="false">WARTA JEMAAT</string>
+    <string name="gereja">GPIB Bhaskara Surabaya</string>
+    <string name="ucapan_selamat_datang">Ucapan Selamat Datang</string>
+    <string name="bab1" translatable="false">Teologi dan Persidangan Gerejawi</string>
+    <string name="bab2" translatable="false">Pelayanan dan Kesaksian</string>
+    <string name="bab3" translatable="false">Gereja, Masyarakat, dan Agama-Agama</string>
+    <string name="bab4" translatable="false">Pembinaan dan Pengembangan Sumber Daya Insani - Pelayanan Kategorial</string>
+    <string name="bab5" translatable="false">Informasi, Organisasi, dan Komunikasi - Penelitian dan Pengembangan</string>
+    <string name="bab6" translatable="false">Pembangunan Ekonomi Gereja</string>
+</resources>

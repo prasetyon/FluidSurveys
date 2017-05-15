@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/blackborder">
+
+    <TextView
+        android:id="@+id/textLesson1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:layout_margin="4dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textScore1"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <EditText
+            android:id="@+id/editScore1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:textSize="16sp"
+            android:inputType="textCapCharacters"
+            android:maxLength="2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textCredit1"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <EditText
+            android:id="@+id/editCredit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:ems="10"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+</LinearLayout>

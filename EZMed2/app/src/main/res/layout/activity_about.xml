@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="About Ez-Med"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/grayblackborder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Ez-Med dapat menjadi media informasi online bagi para konsumen yang mencari dokter dan obat serta dapat menjadi media publikasi serta promosi bagi apotek dan dokter untuk memasarkan produk dan jasanya. Aplikasi Ez-Med ini merupakan platform yang berbasis mobile yang memuat banyak informasi tentang dokter, obat-obat, serta apotek. Selain untuk menyediakan informasi yang begitu lengkapnya, aplikasi Ez-Med ini juga mengingatkan para konsumen (orang sakit) untuk meminum obat sesuai dengan jadwal yang telah diberikan dokter masing-masing."
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:background="@drawable/darkgrayblackborder"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/grayblackborder">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Our Team"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/adamlevine" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/adamlevine" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/adamlevine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reynaldo Johanes"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Prasetyo Nugrohadi"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Steven Kurniawan"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5114100064"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5114100070"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5114100100"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="\n\n\nCopyright \u00A9 2016 \nEz-Life Developer Team"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:background="@drawable/darkgrayblackborder"/>
+    </LinearLayout>
+</ScrollView>

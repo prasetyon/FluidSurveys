@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_after_erection_steel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="afterErection.AfterErectionSWP1Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNamaBlok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blok 1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_username"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/blueLineLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_username"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/transparence_black"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/proses"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edProsesBlok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Steel Work Preparation 1 After Erection"
+                android:textSize="@dimen/input_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_username"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/transparence_black"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/posisi_blok"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edPosisiBlok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="@dimen/input_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_username"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/transparence_black"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="Inspection Date"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edInsDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/input_text"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visual_inspection"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"
+                    android:onClick="help"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/blackborder"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prep_grade"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edInputPrepGrade"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:inputType="text"
+                        android:background="@drawable/blackborder"
+                        android:hint="-"/>
+
+                    <EditText
+                        android:id="@+id/edStandardPrepGrade"
+                        android:layout_width="@dimen/input_box"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:inputType="text"
+                        android:background="@drawable/blackborder"
+                        android:hint="standard"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <CheckBox
+                        android:id="@+id/cbSharpEdges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cbSharpEdges"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sharp_edges"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivSharpEdges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/blackborder"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <CheckBox
+                        android:id="@+id/cbGap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cbGap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/gap"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivGap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/blackborder"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <CheckBox
+                        android:id="@+id/cbImperfectWelding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cbImperfectWelding"
+                        android:layout_centerVertical="true"
+                        android:text="@string/imperfect_welding"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivImperfectWelding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/blackborder"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <CheckBox
+                        android:id="@+id/cbMissWeld"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cbMissWeld"
+                        android:layout_centerVertical="true"
+                        android:text="@string/miss_weld"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivMissWeld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/blackborder"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <CheckBox
+                        android:id="@+id/cbImperfectSteelSurface"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cbImperfectSteelSurface"
+                        android:layout_centerVertical="true"
+                        android:text="@string/imperfect_Steel_surface"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivImperfectSteelSurface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/blackborder"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/steel_condition_confirm"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:background="@drawable/blackborder">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/type_of_defect"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edTypeOfDefect"
+                        android:layout_width="@dimen/input_box_med"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:inputType="text"
+                        android:background="@drawable/blackborder"
+                        android:hint="-"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/repair_method"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edRepairMethod"
+                        android:layout_width="@dimen/input_box_med"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:inputType="text"
+                        android:background="@drawable/blackborder"
+                        android:hint="-"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/repair_confirm"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/edRepairConfirmDate"
+                        android:layout_width="@dimen/input_box_med"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:inputType="text"
+                        android:background="@drawable/blackborder"
+                        android:hint="dd/mm/yyyy"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/inspection_documentation"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivDocumentation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small">
+
+                <ImageView
+                    android:id="@+id/ivDocumentation4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/blackborder"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/comment"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edBlockComment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/blackborder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/blueLineLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_username"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/transparence_black"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="@string/nama_dokumen"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edNamaDokumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="@dimen/btn_bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_bottom"
+                    android:textStyle="bold"
+                    android:text="@string/back_btn"/>
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="@dimen/btn_bottom"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_bottom"
+                    android:textStyle="bold"
+                    android:text="@string/submit_btn"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

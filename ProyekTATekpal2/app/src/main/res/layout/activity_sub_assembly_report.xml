@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_raw_material_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_small"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/padding_small"
+    tools:context="report.SubAssemblyReport">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Laporan Inspeksi Welding"
+                android:textSize="@dimen/report_text"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/green_small_blackborder"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Project Name"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvProjectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="The project name here"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Block Name"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvBlockName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="The block name here"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Component Name"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvComponentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="The component name here"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Inspection Date"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvInspectionDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Inspection date"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Inspection Process"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvProses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Visual Welding Inspection Sub Assembly Stage"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Construction Stage"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvStage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Sub Assembly Stage"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Material Specification"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Material Specifiation"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Welding Process"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvWeldingProcess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Welding Process"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Manual / Machine"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvManual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Manual / Machine"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Position of Welding"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"
+                    android:id="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/tvPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Position of Welding"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Filler Metal Spec"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvFillerMetalSpec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Filler Metal Spec"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Filler Metal Class"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvFillerMetalClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Filler Metal Class"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Welding Current"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvWeldingCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Welding Current"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Polarity"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvPolarity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Polarity"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Electrode Size"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvElectrode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Electrode Size"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Speed of Travel"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Speed of Travel"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Document Name"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvDocumentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Document name"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Visual Inspection"
+                android:textSize="@dimen/report_text"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/green_small_blackborder"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/report_text"
+                    android:text="Indikator"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/report_text"
+                    android:text="Di lapangan"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/report_text"
+                    android:text="Standard"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Hasil"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Sharp Edges"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvSharpEdges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Yes / No"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvStdSharpEdges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Standard"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvResSharpEdges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Accept / Reject"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Gap"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvGap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Yes / No"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvStdGap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Standard"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvResGap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Accept / Reject"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Impefect Welding"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvImperfectWelding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Yes / No"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvStdImperfectWelding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Standard"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvResImperfectWelding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Accept / Reject"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Miss Weld"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvMissWeld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Yes / No"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvStdMissWeld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Standard"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvResMissWeld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Accept / Reject"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Imperfect Steel Surface"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvImperfectSteel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Yes / No"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvStdImperfectSteel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Standard"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:id="@+id/tvResImperfectSteel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:hint="Accept / Reject"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Comment"
+                android:textSize="@dimen/report_text"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/green_small_blackborder"/>
+
+            <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/blackborder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Inspection Documentation"
+                android:textSize="@dimen/report_text"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/green_small_blackborder"
+                android:id="@+id/textView3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivDocumentation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivDocumentation6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Inspection Approval"
+                android:textSize="@dimen/report_text"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/green_small_blackborder"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/report_text"
+                    android:text="Welding Inspector"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Shipyard QC"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/report_text"
+                    android:text="Owner"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/report_text"
+                    android:text="Classification"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivSignInspector"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivSignShipyard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivSignOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+
+                <ImageView
+                    android:id="@+id/ivSignClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_blackborder"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Save Report"/>
+    </RelativeLayout>
+</LinearLayout>

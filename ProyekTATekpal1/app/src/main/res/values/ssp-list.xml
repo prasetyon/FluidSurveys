@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ssp_list">
+        <item>Select the part...</item>
+        <item>Surface Contaminant</item>
+        <item>DQR Photo 1</item>
+        <item>DQR Photo 2</item>
+        <item>SPM Photo 1</item>
+        <item>SPM Photo 2</item>
+        <item>SPM Photo 3</item>
+        <item>Documentation 1</item>
+        <item>Documentation 2</item>
+        <item>Documentation 3</item>
+        <item>Documentation 4</item>
+        <item>Documentation 5</item>
+        <item>Documentation 6</item>
+    </string-array>
+</resources>

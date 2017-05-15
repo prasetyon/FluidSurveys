@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="apotek">
+        <item>Apotek Kimia Farma</item>
+        <item>Apotek Tujuh</item>
+        <item>Apotek Kita Bersama</item>
+        <item>Apotek Haha</item>
+    </string-array>
+</resources>

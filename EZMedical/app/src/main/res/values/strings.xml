@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">EZ Med</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading">Loading…</string>
+    <string name="doctor">Doctor</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="about_us">About Us</string>
+    <string name="account_info">Account Info</string>
+    <string name="jumlah_antrian">Jumlah Antrian Hari Ini</string>
+    <string name="consume_per_day">Consumes / day :</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <!-- Text test -->
+    <string name="name_test">Name test here</string>
+    <string name="location_test">Jl. Jalan tak tau kemana 61214</string>
+    <string name="phone_test">+6288888800888</string>
+    <string name="operational_test">09:00 – 21:00</string>
+    <string name="info_test">Here comes the information about the user</string>
+    <string name="number_test">99</string>
+    <string name="email_test">testing.testing@testing.com</string>
+    <string name="medicine_test">Medicine: Dexamethasone</string>
+    <string name="date_test">XX/XX/XXXX</string>
+    <string name="time_test">XX:XX</string>
+
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="ambil_antrian">Ambil Antrian</string>
+
+    <!-- url -->
+    <string name="about_background_url">http://mobile4day.com/ezmed/images/aboutbg.jpg</string>
+    <string name="account_background_url">http://mobile4day.com/ezmed/images/accountbg.png</string>
+    <string name="doctor_background_url">http://mobile4day.com/ezmed/images/doctorbg.jpg</string>
+    <string name="pharmacy_background_url">http://mobile4day.com/ezmed/images/pharmacybg.png</string>
+    <string name="get_about_url">http://mobile4day.com/get_about.php</string>
+    <string name="get_pharmacy_url">http://mobile4day.com/ezmed/get_pharmacy.php</string>
+    <string name="get_doctor_url">http://mobile4day.com/ezmed/get_doctor.php</string>
+    <string name="get_queue_url">http://mobile4day.com/ezmed/get_queue.php</string>
+    <string name="get_booking_url">http://mobile4day.com/ezmed/get_booking.php</string>
+    <string name="get_booking_detail_url">http://mobile4day.com/ezmed/get_booking_detail.php</string>
+    <string name="get_recipe_order_url">http://mobile4day.com/ezmed/get_recipe_order.php</string>
+    <string name="insert_queue_url">http://mobile4day.com/ezmed/insert_queue.php</string>
+    <string name="get_account_url">http://mobile4day.com/ezmed/get_account.php</string>
+    <string name="get_medicine_list_url">http://mobile4day.com/ezmed/get_medicine.php</string>
+    <string name="upload_url">http://mobile4day.com/ezmed/upload.php</string>
+    <string name="login_url">http://mobile4day.com/ezmed/login.php</string>
+    <string name="register_url">http://mobile4day.com/ezmed/register.php</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_re_password">Re-enter Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="proses_list_2">
+        <item>Select a proses...</item>
+        <item>Sub Assembly</item>
+        <item>Assembly</item>
+        <item>Erection</item>
+        <item>Final Inspection</item>
+    </string-array>
+</resources>

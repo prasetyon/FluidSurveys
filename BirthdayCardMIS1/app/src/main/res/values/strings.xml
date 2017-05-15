@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Birthday Card</string>
+    <string name="happy">Happy</string>
+    <string name="birthday">Birthday</string>
+    <string name="login">LOGIN</string>
+    <string name="biodata">BIODATA</string>
+    <string name="memories">MEMORIES</string>
+    <string name="happy_birthday">Happy Birthday</string>
+    <string name="input_name">Please Input Your Full Name</string>
+    <string name="first_name">First Name :</string>
+    <string name="last_name">Last Name :</string>
+    <string name="tempat_lahir">Tempat Lahir :</string>
+    <string name="tanggal_lahir">Tanggal Lahir :</string>
+    <string name="first_name1">First Name</string>
+    <string name="last_name1">Last Name</string>
+    <string name="tempat_lahir1">Tempat Lahir</string>
+    <string name="tanggal_lahir1">Tanggal Lahir</string>
+    <string name="dbl_dot"> : </string>
+</resources>
