@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">EzMed</string>
-    <string name="Apotek">Apotek</string>
-    <string name="Dokter">Dokter</string>
-    <string name="LOGIN">Login</string>
-    <string name="HOME">Home</string>
-</resources>

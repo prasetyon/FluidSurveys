@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="final_choice_list">
-        <item>NO</item>
-        <item>YES WITH REPAIR</item>
-        <item>YES</item>
-    </string-array>
-</resources>

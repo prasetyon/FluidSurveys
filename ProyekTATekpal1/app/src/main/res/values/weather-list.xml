@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="weather_list">
-        <item>Sunshine</item>
-        <item>Cloudy</item>
-        <item>Overcast</item>
-        <item>Raining</item>
-    </string-array>
-</resources>

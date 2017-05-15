@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="department_array">
-        <item>Coating Inspector</item>
-        <item>Owner</item>
-        <item>Shipyard</item>
-        <item>Class</item>
-    </string-array>
-</resources>
